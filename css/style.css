@@ -38,7 +38,7 @@ p {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  align-items: center;
+  align-items: top;
   justify-content: center;
   gap: 20px;
 }
@@ -518,7 +518,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 21px 40px;
+  padding: 25px 10px;
 }
 
 .footer-flex .icons-social {
