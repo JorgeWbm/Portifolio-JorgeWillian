@@ -92,26 +92,26 @@ p {
   }
 
   .imagem-projeto1 {
-    background-image: url('../assets/designs/projeto/camisaofc.jpg');
+    background-image: url('../assets/capas/projeto.png');
   }
 
   .imagem-projeto2 {
-    background-image: url('../assets/designs/jubarte/JubarteDivers.png');
+    background-image: url('../assets/capas/mergulho.png');
   }
 
   .imagem-projeto3 {
-    background-image: url('../assets/designs/lab/02.png');
+    background-image: url('../assets/capas/lab1.png');
   }
 
   .imagem-projeto4 {
-    background-image: url('../assets/designs/construcao/13 - makita.png');
+    background-image: url('../assets/capas/construcao.png');
   }
   .imagem-projeto5 {
-    background-image: url('../assets/designs/restaurante/feed3.png');
+    background-image: url('../assets/capas/restaurante.png');
   }
  
   .imagem-projeto6 {
-    background-image: url('../assets/designs/time/camisa\ editada.png');
+    background-image: url('../assets/capas/royale1.png');
   }
 
 .hover-float {
