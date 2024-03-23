@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pop-up com Banners</title>
+<style>
+    /* Estilos opcionais para o banner */
+    .popup-banner {
+        max-width: 100%;
+    }
+
+    /* Estilo para o botão de fechar */
+    .close {
+        position: absolute;
+        top: 5px; /* Ajuste fino para a posição do círculo */
+        right: 5px; /* Ajuste fino para a posição do círculo */
+        font-size: 18px; /* Tamanho do 'x' */
+        color: red; /* Cor vermelha */
+        cursor: pointer;
+        width: 24px; /* Tamanho do botão */
+        height: 24px; /* Tamanho do botão */
+        line-height: 24px; /* Centralizar verticalmente */
+        text-align: center; /* Centralizar horizontalmente */
+        border-radius: 50%; /* Transformando a borda em um círculo */
+        background-color: white; /* Cor de fundo para cobrir a imagem do 'x' */
+        border: 2px solid red; /* Adicionando uma borda vermelha */
+        font-weight: bold; /* Deixando o 'x' em negrito */
+        padding: 0; /* Removendo o espaçamento interno */
+    }
+
+    /* Estilo para o contêiner de imagens */
+    .image-container {
+        display: flex; /* Usando flexbox para alinhar as imagens lado a lado */
+        justify-content: center; /* Alinhando as imagens ao centro horizontalmente */
+        overflow-x: auto; /* Adicionando uma barra de rolagem horizontal se as imagens forem muito grandes */
+        max-width: 100%; /* Garantindo que o contêiner se ajuste à largura do pop-up */
+    }
+
+    /* Estilo para cada imagem no contêiner */
+    .image-container img {
+        margin: 5px; /* Adicionando margem entre as imagens */
+        max-height: 200px; /* Definindo uma altura máxima para as imagens */
+    }
+</style>
+</head>
+<body>
+
+<!-- Botão para abrir o pop-up -->
+<button onclick="openPopup()" class="projeto imagem-projeto2" id="dialogProjeto2">Jubarte Divers mergulhos</button>
+
+<!-- Conteúdo do Pop-up -->
+<div id="popup" class="popup" style="display: none;">
+    <span onclick="closePopup()" class="close">&times;</span>
+    <div class="image-container">
+        <img src="assets/designs/jubarte/JubarteDivers.png" alt="Banner 1" class="popup-banner">
+        <img src="assets/designs/jubarte/B&P Jubarte Divers.png" alt="Banner 2" class="popup-banner">
+        <img src="assets/designs/jubarte/P&B Jubarte Divers.png" alt="Banner 3" class="popup-banner">
+        <!-- Adicione mais imagens conforme necessário -->
+    </div>
+</div>
+
+<script>
+// Função para abrir o pop-up
+function openPopup() {
+    document.getElementById("popup").style.display = "block";
+}
+
+// Função para fechar o pop-up
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+
+</body>
+</html>

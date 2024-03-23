@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylemodal.css">
+    <title>Galeria restaurante Veredas</title>
+    <style>
+        /* Estilos CSS para o botão */
+        #btnVoltar {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 999; /* Garante que o botão esteja acima de outros elementos */
+            background-color: green; /* Cor verde */
+            color: white; /* Texto branco */
+            padding: 10px 20px; /* Espaçamento interno */
+            border: none; /* Sem borda */
+            border-radius: 5px; /* Borda arredondada */
+            cursor: pointer; /* Cursor ao passar por cima */
+        }
+
+        /* Estilos adicionais para tornar o botão responsivo */
+        @media only screen and (max-width: 600px) {
+            #btnVoltar {
+                top: 10px;
+                left: 10px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Veredas - Café e Restô</h1>
+    </header>
+    <!-- Botão para voltar à página anterior -->
+    <button id="btnVoltar" onclick="history.go(-1)">Voltar</button>
+    <main>
+        <div class="gallery-container">
+            <!-- Suas imagens aqui -->
+                    <a href="./designs/restaurante/feed3.png" class="gallery-items">
+                        <img src="./designs/restaurante/feed3.png" alt="feed">
+                    </a>
+                    <a href="./designs/restaurante/veredas.png" class="gallery-items">
+                        <img src="./designs/restaurante/veredas.png" alt="LogoP&B">
+                    </a>
+                    <a href="./designs/restaurante/story2.png" class="gallery-items">
+                        <img src="./designs/restaurante/story2.png" alt="LogoB&P">
+                    </a>
+                    <a href="./designs/restaurante/story.png" class="gallery-items">
+                        <img src="./designs/restaurante/story.png" alt="Figurinha">
+                    </a>
+                    <a href="./designs/restaurante/01_.jpg" class="gallery-items">
+                        <img src="./designs/restaurante/01_.jpg" alt="Camisa">
+                    </a>
+                    <a href="./designs/restaurante/02_.jpg" class="gallery-items">
+                        <img src="./designs/restaurante/02_.jpg" alt="Camisa">
+                    </a>
+                    <a href="./designs/restaurante/03_.jpg" class="gallery-items">
+                        <img src="./designs/restaurante/03_.jpg" alt="Camisa">
+                    </a>
+                </div>        
+    </main>
+    <footer>
+        <span>Copyright &copy; | Jorge Willian</span>
+    </footer>
+</body>
+</html>

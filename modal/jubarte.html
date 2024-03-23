@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylemodal.css">
+    <title>Galeria Jubarte Divers</title>
+    <style>
+        /* Estilos CSS para o botão */
+        #btnVoltar {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 999; /* Garante que o botão esteja acima de outros elementos */
+            background-color: green; /* Cor verde */
+            color: white; /* Texto branco */
+            padding: 10px 20px; /* Espaçamento interno */
+            border: none; /* Sem borda */
+            border-radius: 5px; /* Borda arredondada */
+            cursor: pointer; /* Cursor ao passar por cima */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jubarte Divers - Empresa de mergulho</h1>
+    </header>
+    <!-- Botão para voltar à página anterior -->
+    <button id="btnVoltar" onclick="history.go(-1)">Voltar</button>
+    <main>
+        <div class="gallery-container">
+            <a href="./designs/jubarte/JubarteDivers.png" class="gallery-items">
+                <img src="./designs/jubarte/JubarteDivers.png" alt="Logo">
+            </a>
+            <a href="./designs/jubarte/P&B Jubarte Divers.png" class="gallery-items">
+                <img src="./designs/jubarte/P&B Jubarte Divers.png" alt="LogoP&B">
+            </a>
+            <a href="./designs/jubarte/B&P Jubarte Divers.png" class="gallery-items">
+                <img src="./designs/jubarte/B&P Jubarte Divers.png" alt="LogoB&P">
+            </a>
+            <a href="./designs/jubarte/Figurinha.png" class="gallery-items">
+                <img src="./designs/jubarte/Figurinha.png" alt="Figurinha">
+            </a>
+            <a href="./designs/jubarte/camisa editada.png" class="gallery-items">
+                <img src="./designs/jubarte/camisa editada.png" alt="Camisa">
+            </a>
+        </div>        
+    </main>
+    <footer>
+        <span>Copyright &copy; | Jorge Willian</span>
+    </footer>
+</body>
+</html>
